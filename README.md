@@ -1,4 +1,4 @@
-🦴 Bone Fracture Detection & Classification System
+- Bone Fracture Detection & Classification System
 An intelligent medical imaging system designed to automate the detection and classification of bone fractures from X-ray images. This project aims to assist medical professionals by providing a fast, reliable "second opinion" to reduce diagnostic errors and improve patient outcomes.
 
 - Overview
