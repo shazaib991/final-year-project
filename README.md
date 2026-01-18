@@ -9,6 +9,12 @@
 
 <img width="1364" height="716" alt="Screenshot 2025-12-23 150505" src="https://github.com/user-attachments/assets/98874762-03b0-47f6-ace4-6802b15f5f54" />
 
+<img width="1599" height="762" alt="Screenshot 2026-01-18 141111" src="https://github.com/user-attachments/assets/e7b5b578-f36d-492b-bad0-c8f5557873ba" />
+
+<img width="1599" height="763" alt="Screenshot 2026-01-18 141141" src="https://github.com/user-attachments/assets/7ba618ce-6f9f-4521-9f15-b3ae11f38bfb" />
+
+<img width="1599" height="763" alt="Screenshot 2026-01-18 141354" src="https://github.com/user-attachments/assets/a483bbbf-1538-41d2-b375-91813c312b82" />
+
 
 -   Bone Fracture Detection & Classification System
     An intelligent medical imaging system designed to automate the detection and classification of bone fractures from X-ray images. This project aims to assist medical professionals by providing a fast, reliable "second opinion" to reduce diagnostic errors and improve patient outcomes.
@@ -28,7 +34,7 @@ Dataset Integration: Built and tested using a comprehensive Bone Fracture Datase
 Results Tracking: (Optional feature) Logs and manages patient/user diagnostic history.
 
 -   Tech Stack
-    Language: Python 3.x
+    Language: Python 3.x, react, django
 
 Deep Learning: TensorFlow, Keras
 
@@ -36,7 +42,7 @@ Image Processing: OpenCV, PIL (Pillow), NumPy
 
 Database: SQLite3
 
-Frontend/GUI: kivy
+Frontend/GUI: kivy, react
 
 Version Control: Git & GitHub
 
@@ -44,6 +50,8 @@ Version Control: Git & GitHub
     Bash
 
 ├── BoneFractureDataset/ # Training and validation image data
+├── backend/ # backend for api
+├── frontend/ # frontend web
 ├── database.py # SQLite database logic and schema
 ├── users.db # Local storage for user credentials
 ├── fracture_classification_model.h5 # Pre-trained CNN model
@@ -57,11 +65,25 @@ Version Control: Git & GitHub
 1. Clone the Repository
    Bash
 
-git clone https://github.com/shazaib991/final-year-project.git
-cd final-year-project 2. Create a Virtual Environment
-Bash
+# for kivy app:
 
-python -m venv venv
+git clone https://github.com/shazaib991/final-year-project.git
+1. cd final-year-project
+2. Create a Virtual Environment python -m venv venv or conda activate "environment name"
+3. python main2.py
+
+# or for frontend web:
+
+git clone https://github.com/shazaib991/final-year-project.git
+1. cd final-year-project frontend/
+2. create react app and npm install to install all dependencies
+3. npm run dev
+
+# or for backend web api:
+git clone https://github.com/shazaib991/final-year-project.git
+1. cd final-year-project backend/
+2. python -m venv venv or conda activate "environment name" and install packages it shows missing
+3. python manage.py runserver
 
 # Windows
 
@@ -102,7 +124,7 @@ Input Shape: [Assuming 224x224 or 150x150]
 
 Architecture: Multiple layers of Convolution, Max-Pooling, and Dropout for regularization.
 
-Accuracy: 92%
+Accuracy: 96%
 
 Loss Function: Binary Cross-entropy
 
