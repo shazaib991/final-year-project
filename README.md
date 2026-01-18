@@ -75,12 +75,18 @@ python -m venv venv
 or
 conda activate "environment name"
 
-# or for web:
+# or for frontend web:
 
 git clone https://github.com/shazaib991/final-year-project.git
-cd final-year-project 2. create react app and npm install to install all dependencies
+1. cd final-year-project frontend/
+2. create react app and npm install to install all dependencies
 
 npm run dev
+
+# or for backend web api:
+git clone https://github.com/shazaib991/final-year-project.git
+1. cd final-year-project backend/
+2. python -m venv venv or conda activate "environment name" and install packages it shows missing
 
 # Windows
 
