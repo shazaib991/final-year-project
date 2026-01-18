@@ -9,6 +9,12 @@
 
 <img width="1364" height="716" alt="Screenshot 2025-12-23 150505" src="https://github.com/user-attachments/assets/98874762-03b0-47f6-ace4-6802b15f5f54" />
 
+<img width="1599" height="762" alt="Screenshot 2026-01-18 141111" src="https://github.com/user-attachments/assets/e7b5b578-f36d-492b-bad0-c8f5557873ba" />
+
+<img width="1599" height="763" alt="Screenshot 2026-01-18 141141" src="https://github.com/user-attachments/assets/7ba618ce-6f9f-4521-9f15-b3ae11f38bfb" />
+
+<img width="1599" height="763" alt="Screenshot 2026-01-18 141354" src="https://github.com/user-attachments/assets/a483bbbf-1538-41d2-b375-91813c312b82" />
+
 
 -   Bone Fracture Detection & Classification System
     An intelligent medical imaging system designed to automate the detection and classification of bone fractures from X-ray images. This project aims to assist medical professionals by providing a fast, reliable "second opinion" to reduce diagnostic errors and improve patient outcomes.
@@ -36,7 +42,7 @@ Image Processing: OpenCV, PIL (Pillow), NumPy
 
 Database: SQLite3
 
-Frontend/GUI: kivy
+Frontend/GUI: kivy, react
 
 Version Control: Git & GitHub
 
@@ -44,6 +50,8 @@ Version Control: Git & GitHub
     Bash
 
 ├── BoneFractureDataset/ # Training and validation image data
+├── backend/ # backend for api
+├── frontend/ # frontend web
 ├── database.py # SQLite database logic and schema
 ├── users.db # Local storage for user credentials
 ├── fracture_classification_model.h5 # Pre-trained CNN model
@@ -57,11 +65,20 @@ Version Control: Git & GitHub
 1. Clone the Repository
    Bash
 
+# for kivy app:
+
 git clone https://github.com/shazaib991/final-year-project.git
 cd final-year-project 2. Create a Virtual Environment
 Bash
 
 python -m venv venv
+
+# or for web:
+
+git clone https://github.com/shazaib991/final-year-project.git
+cd final-year-project 2. create react app and npm install to install all dependencies
+
+npm run dev
 
 # Windows
 
