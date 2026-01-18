@@ -1,0 +1,4 @@
+tensorflow
+kivy
+numpy
+pysqlite3
