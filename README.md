@@ -34,7 +34,7 @@ Dataset Integration: Built and tested using a comprehensive Bone Fracture Datase
 Results Tracking: (Optional feature) Logs and manages patient/user diagnostic history.
 
 -   Tech Stack
-    Language: Python 3.x
+    Language: Python 3.x, react, django
 
 Deep Learning: TensorFlow, Keras
 
@@ -71,7 +71,9 @@ git clone https://github.com/shazaib991/final-year-project.git
 cd final-year-project 2. Create a Virtual Environment
 Bash
 
-python -m venv venv
+python -m venv venv 
+or
+conda activate "environment name"
 
 # or for web:
 
