@@ -68,25 +68,22 @@ Version Control: Git & GitHub
 # for kivy app:
 
 git clone https://github.com/shazaib991/final-year-project.git
-cd final-year-project 2. Create a Virtual Environment
-Bash
-
-python -m venv venv 
-or
-conda activate "environment name"
+1. cd final-year-project
+2. Create a Virtual Environment python -m venv venv or conda activate "environment name"
+3. python main2.py
 
 # or for frontend web:
 
 git clone https://github.com/shazaib991/final-year-project.git
 1. cd final-year-project frontend/
 2. create react app and npm install to install all dependencies
-
-npm run dev
+3. npm run dev
 
 # or for backend web api:
 git clone https://github.com/shazaib991/final-year-project.git
 1. cd final-year-project backend/
 2. python -m venv venv or conda activate "environment name" and install packages it shows missing
+3. python manage.py runserver
 
 # Windows
 
