@@ -1,0 +1,9 @@
+django
+djangorestframework
+tensorflow
+pillow
+numpy
+requests
+django-cors-headers
+djoser
+djangorestframework-simplejwt
