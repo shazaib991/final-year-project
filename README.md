@@ -127,7 +127,7 @@ Input Shape: [Assuming 224x224 or 150x150]
 
 Architecture: Multiple layers of Convolution, Max-Pooling, and Dropout for regularization.
 
-Accuracy: 92%
+Accuracy: 96%
 
 Loss Function: Binary Cross-entropy
 
