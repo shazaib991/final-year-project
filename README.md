@@ -15,6 +15,7 @@
 
 <img width="1599" height="763" alt="Screenshot 2026-01-18 141354" src="https://github.com/user-attachments/assets/a483bbbf-1538-41d2-b375-91813c312b82" />
 
+<img width="441" height="753" alt="Screenshot 2026-01-20 221256" src="https://github.com/user-attachments/assets/2c4026e9-fffd-4e00-b7cc-e9e12c7a3fff" />
 
 -   Bone Fracture Detection & Classification System
     An intelligent medical imaging system designed to automate the detection and classification of bone fractures from X-ray images. This project aims to assist medical professionals by providing a fast, reliable "second opinion" to reduce diagnostic errors and improve patient outcomes.
