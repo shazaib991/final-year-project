@@ -35,7 +35,7 @@ Dataset Integration: Built and tested using a comprehensive Bone Fracture Datase
 Results Tracking: (Optional feature) Logs and manages patient/user diagnostic history.
 
 -   Tech Stack
-    Language: Python 3.x, react, django
+    Language: Python 3.x, react, django, flutter
 
 Deep Learning: TensorFlow, Keras
 
@@ -43,7 +43,7 @@ Image Processing: OpenCV, PIL (Pillow), NumPy
 
 Database: SQLite3
 
-Frontend/GUI: kivy, react
+Frontend/GUI: kivy, react, flutter
 
 Version Control: Git & GitHub
 
@@ -53,6 +53,7 @@ Version Control: Git & GitHub
 ├── BoneFractureDataset/ # Training and validation image data
 ├── backend/ # backend for api
 ├── frontend/ # frontend web
+├── fracture_app # flutter mobile app
 ├── database.py # SQLite database logic and schema
 ├── users.db # Local storage for user credentials
 ├── fracture_classification_model.h5 # Pre-trained CNN model
@@ -79,6 +80,13 @@ git clone https://github.com/shazaib991/final-year-project.git
 1. cd final-year-project frontend/
 2. create react app and npm install to install all dependencies
 3. npm run dev
+
+# or for frontend flutter app:
+
+git clone https://github.com/shazaib991/final-year-project.git
+1. cd final-year-project fracture_app/
+2. flutter pub get
+3. flutter run
 
 # or for backend web api:
 git clone https://github.com/shazaib991/final-year-project.git
