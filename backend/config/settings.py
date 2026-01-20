@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-+=*3(&b$vl#hz7+_em)gfhn+6%(!)i$!j2hog@4+(@5$(hsh3=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '10.0.2.2',  # Android Emulator
+    '*',  # Allow all for development (restrict in production)
+]
 
 
 # Application definition
@@ -139,6 +144,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5174",
     "http://localhost:5175",
     "http://127.0.0.1:5175",
+    "http://10.0.2.2:8000",  # Android Emulator
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
 ]
 
 REST_FRAMEWORK = {
@@ -152,5 +160,8 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL': '#/activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': False,
-    'SERIALIZERS': {},
+    'USER_CREATE_PASSWORD_RETYPE': True,
+    'SERIALIZERS': {
+        'user_create': 'detection.serializers.CustomUserCreateSerializer',
+    },
 }

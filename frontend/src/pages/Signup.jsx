@@ -4,14 +4,19 @@ import { Link, useNavigate } from 'react-router-dom';
 import api from '../api';
 
 const Signup = () => {
-    const { register, handleSubmit, setError, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, setError, formState: { errors } } = useForm();
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
 
     const onSubmit = async (data) => {
         setIsLoading(true);
         try {
-            await api.post('/auth/users/', data);
+            // Send username, password, and re_password to match Djoser requirements
+            await api.post('/auth/users/', {
+                username: data.username,
+                password: data.password,
+                re_password: data.re_password
+            });
             // After signup, redirect to login
             navigate('/');
         } catch (error) {
@@ -57,6 +62,19 @@ const Signup = () => {
                             placeholder="Choose a password"
                         />
                         {errors.password && <p className="text-red-500 text-sm ml-1">{errors.password.message}</p>}
+                    </div>
+                    <div className="space-y-1">
+                        <label className="block text-sm font-medium text-gray-700 ml-1">Confirm Password</label>
+                        <input
+                            type="password"
+                            {...register('re_password', {
+                                required: 'Please confirm your password',
+                                validate: value => value === watch('password') || 'Passwords do not match'
+                            })}
+                            className="glass-input w-full"
+                            placeholder="Confirm your password"
+                        />
+                        {errors.re_password && <p className="text-red-500 text-sm ml-1">{errors.re_password.message}</p>}
                     </div>
                     {errors.root && <p className="text-red-500 text-sm text-center bg-red-50 p-2 rounded-lg border border-red-100">{errors.root.message}</p>}
                     <button

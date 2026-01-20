@@ -2,10 +2,12 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import status
+from rest_framework.permissions import AllowAny
 from .utils import predict_fracture
 
 class FractureDetectionView(APIView):
     parser_classes = (MultiPartParser, FormParser)
+    permission_classes = [AllowAny]
 
     def post(self, request, *args, **kwargs):
         if 'image' not in request.data:
